@@ -1,0 +1,5 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+    <TextView android:id="@+id/language_selection_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="40dp" android:gravity="center" android:text="설정" android:textSize="20sp" android:textStyle="bold" android:fontFamily="sans-serif"/>
+    <Button android:id="@+id/display_button" android:layout_width="220dp" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:backgroundTint="#2FC461" android:text="디스플레이" android:fontFamily="sans-serif"/>
+    <Button android:id="@+id/language_button" android:layout_width="220dp" android:layout_height="wrap_content" android:backgroundTint="#2FC461" android:text="언어" android:fontFamily="sans-serif"/>
+</LinearLayout>

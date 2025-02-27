@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Corrosive">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- 뒤로가기 버튼 -->
+
+        <TextView
+            android:id="@+id/warningText_corrosive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="부식성 물질에 대한 주의사항\n\n보호 장비 착용: 작업 시 적절한 개인 보호 장비(PPE), 즉 보호 장갑, 고글, 방진 마스크 등을 착용해야 합니다.\n\n환기: 부식성 물질을 다룰 때는 작업 공간을 적절히 환기해야 합니다.\n\n피부 접촉: 피부에 닿은 경우 즉시 흐르는 물로 15분 이상 씻어내고, 의사와 상담해야 합니다.\n\n눈 접촉: 눈에 들어간 경우 즉시 물로 15분 이상 세척하고, 즉시 의사의 치료를 받아야 합니다.\n\n폐기방벙: 부식성 물질을 안전하게 폐기하기 위해서는 현지 규정에 따라 전용 용기에 담아 분리 폐기해야 합니다."
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/back_button_corrosive"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="285dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2FC461"
+            android:fontFamily="sans-serif"
+            android:onClick="onBackPressed"
+            android:text="뒤로가기"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

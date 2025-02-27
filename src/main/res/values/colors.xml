@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 색상 정의 -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccentLight">#BB86FC</color> <!-- 다크 모드 강조 색상 -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 기본 애플리케이션 테마 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 기본 스타일 속성 정의 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 다크 모드 테마 -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <!-- 다크 테마를 사용자 정의 -->
+        <item name="android:background">#121212</item> <!-- 어두운 배경 -->
+        <item name="android:textColor">#FFFFFF</item> <!-- 밝은 텍스트 색상 -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item> <!-- 다크 모드 기본 색상 -->
+        <item name="colorAccent">@color/colorAccentLight</item> <!-- 다크 모드 강조 색상 -->
+    </style>
+
+</resources>

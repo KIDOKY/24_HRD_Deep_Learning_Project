@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompressedGas">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/warningText_compressed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="고압가스에 대한 주의사항\n\n온도 조절: 압축가스 용기는 고온 환경에 두지 않도록 주의해야 하며, 열원으로부터 멀리 두어야 합니다. 과열되면 용기가 파손되거나 폭발할 위험이 있습니다.\n\n안전한 보관: 압축가스 용기는 수직으로 세워 안전한 위치에 보관해야 하며, 넘어지지 않도록 고정해야 합니다. 용기 사이에 충분한 간격을 두어야 합니다.\n\n통풍: 압축가스를 사용하는 공간은 잘 통풍이 되어야 하며, 가스 누출 시 신속하게 대피할 수 있도록 해야 합니다.\n\n보호 장비 착용: 압축가스를 다룰 때는 적절한 개인 보호 장비(안전경, 장갑 등)를 착용해야 하며, 가스 누출 시 피부나 눈에 직접 접촉하지 않도록 해야 합니다.\n\n전문가의 지침 준수: 압축가스를 취급할 때는 관련 법규 및 안전 지침을 준수하며, 전문가의 지침을 따라야 합니다.\n\n용기 및 배관 점검: 압축가스 용기 및 배관을 정기적으로 점검하여 누출 여부를 확인하고, 손상된 경우 즉시 수리해야 합니다.\n\n화재 및 폭발 예방: 압축가스는 폭발의 위험이 있으므로 불꽃, 스파크, 고온 표면 등과의 접촉을 피해야 합니다."
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/back_button_compressed"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2FC461"
+            android:fontFamily="sans-serif"
+            android:onClick="onBackPressed"
+            android:text="뒤로가기"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

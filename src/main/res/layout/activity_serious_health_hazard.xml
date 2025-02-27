@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Serious_Health_hazard">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/warningText_serious_health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="건강유해성 물질에 대한 주의사항\n\n발암성/ 생식세포 변이원성/ 생식독성/\n 특정표적장기독성/ 호흡기 과민성/ 흡인 유해성\n\n발암성:\n위험: 노출 시 암 발생 위험이 증가할 수 있음.\n\n생식세포 변이원성:\n위험: 유전 물질에 변화를 일으킬 수 있으며, 이는 생식세포의 변형으로 이어질 수 있음.\n\n생식독성:\n위험: 생식계에 해로운 영향을 미쳐 생식능력에 문제를 일으킬 수 있음.\n\n특정표적장기독성:\n위험: 특정 장기에 유해한 영향을 미칠 수 있음 (간, 신장, 신경계 등).\n\n호흡기 과민성:\n위험: 호흡기에 자극을 줄 수 있으며, 특히 천식이나 호흡기 질환이 있는 사람에게 위험함.\n\n흡인 유해성:\n위험: 흡입 시 유해한 영향을 줄 수 있음, 심각한 호흡기 문제를 유발할 수 있음."
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/back_button_serious_health"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2FC461"
+            android:textColor="@android:color/white"
+            android:text="뒤로가기"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:onClick="onBackPressed" />
+
+    </LinearLayout>
+</ScrollView>

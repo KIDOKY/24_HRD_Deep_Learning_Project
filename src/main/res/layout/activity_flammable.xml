@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Flammable">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/warningText_flammable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+        android:text="Flammable에 대한 주의사항\n\n취급: 정전기, 불꽃 등 점화원에 노출되는 것을 방지해야 하며 분말이 공기에 혼합되면 분진폭발이 일어날 수 있으므로 주의해야 한다.\n\n보관: 건조하고 서늘한 곳에서 가연성 물질 등과 분리해서 보관, 환기가 잘 되는 곳에 저장하며 용기 온도를 40℃ 이하로 유지해서 보관한다."
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/back_button_flammable"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2FC461"
+            android:fontFamily="sans-serif"
+            android:onClick="onBackPressed"
+            android:text="뒤로가기"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

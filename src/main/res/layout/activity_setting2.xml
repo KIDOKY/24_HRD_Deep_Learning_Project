@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".SettingActivity2">
+
+    <TextView
+        android:id="@+id/display_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="디스플레이"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/edit_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="모드를 선택해주세요."
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <!-- 체크박스 그룹 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <CheckBox
+            android:id="@+id/dark_mode_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#2FC361"
+            android:fontFamily="sans-serif"
+            android:text="다크 모드" />
+
+        <CheckBox
+            android:id="@+id/light_mode_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#2FC361"
+            android:fontFamily="sans-serif"
+            android:text="라이트 모드" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/complete_button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#2FC461"
+        android:fontFamily="sans-serif"
+        android:padding="12dp"
+        android:text="완료"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

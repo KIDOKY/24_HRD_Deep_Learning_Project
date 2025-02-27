@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Toxic">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/warningText_toxic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="독성 물질에 대한 주의사항\n\n보관:  독성 물질은 밀폐된 용기에 안전하게 보관해야 하며, 일반인이나 동물의 접근이 제한된 곳에 두어야 한다.\n\n다른 화학 물질과의 혼합을 피하고, 통풍이 잘 되는 장소에 보관해야 한다.\n\n안전 장비 착용:  작업 시 적절한 개인 보호 장비(PPE)를 착용해야 한다. (예: 장갑, 고글, 방호복)\n\n작업 환경:  작업장은 잘 환기되어야 하며, 흡입의 위험이 있는 상황에서는 배기 시스템을 갖추어야 한다.\n\n독성 물질에 대한 안전 데이터 시트(SDS)를 숙지하고 비상 시 대처 방안을 이해해야 한다.\n\n사고 대처:  독성 물질이 누출되거나 쏟아진 경우, 즉시 대피하고 적절한 방법으로 응급 처치를 수행해야 한다.\n\n누출 시 즉시 적절한 흡착제를 사용하여 처리하고, 전문 인력에 신고해야 한다."
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/back_button_toxic"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2FC461"
+            android:textColor="@android:color/white"
+            android:text="뒤로가기"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:onClick="onBackPressed" />
+
+    </LinearLayout>
+</ScrollView>

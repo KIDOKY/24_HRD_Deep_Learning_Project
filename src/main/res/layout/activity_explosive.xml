@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Explosive">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- 뒤로가기 버튼 -->
+        <TextView
+            android:id="@+id/warningText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="폭발성 물질에 대한 주의사항\n\n이 물질은 열, 충격, 마찰 등에 의해 폭발할 수 있는 성질이 있습니다.\n\n보관:\t 폭발성 물질은 서늘하고 건조한 장소에 보관하며, 열원 및 직사광선을 피한다.\n\n유기질소화물은 공기 중에서 장시간 보관을 금한다.\n\n니트로화합물은 화기, 가열, 충격, 마찰, 타격을 절대 금한다.\n\n폭발성 물질은 강산화제나 강산류와 접촉시 발화가 용이하므로 주의한다.\n\n액체상태 폭발성 물질은 인화되기 쉬우므로 가열을 금한다.\n\n고농도의 유기과산화물류는 가열, 충격, 마찰, 직사광선에 노출되지 않도록 주의한다.\n\n고농도의 유기과산화물은 강산화성 물질이므로 다른 물질과 접촉되지 않도록 주의한다.\n\n폭발성 물질은 직사광선이 차단되고 건조, 화기가 양호한 곳에 저장한다."
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2FC461"
+            android:fontFamily="sans-serif"
+            android:onClick="onBackPressed"
+            android:text="뒤로가기"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

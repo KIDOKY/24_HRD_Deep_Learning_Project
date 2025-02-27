@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 타이틀 -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="교통/위험물 표지판 인식 앱"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 이미지 추가 -->
+    <ImageView
+        android:id="@+id/center_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/home"
+        android:layout_marginBottom="20dp" />
+
+    <!-- 선택 옵션 텍스트 뷰 추가 -->
+    <TextView
+        android:id="@+id/option_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="선택 옵션"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="12dp" /> <!-- 아래쪽 여백 설정 -->
+
+    <!-- 이미지 버튼들을 가운데에 배치 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/settings_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:elevation="4dp"
+            android:src="@drawable/logo2" />
+
+        <ImageButton
+            android:id="@+id/top_left_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:elevation="4dp"
+            android:src="@drawable/car" />
+
+        <ImageButton
+            android:id="@+id/top_right_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:elevation="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/da" />
+
+        <ImageButton
+            android:id="@+id/light_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:elevation="4dp"
+            android:src="@drawable/logo3" />
+    </LinearLayout>
+</LinearLayout>
